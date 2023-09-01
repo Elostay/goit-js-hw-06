@@ -1,18 +1,16 @@
 const ingredients = [
-  "Potatoes",
-  "Mushrooms",
-  "Garlic",
-  "Tomatos",
-  "Herbs",
-  "Condiments",
+  'Potatoes',
+  'Mushrooms',
+  'Garlic',
+  'Tomatos',
+  'Herbs',
+  'Condiments',
 ];
 
-const list = document.querySelector("#ingredients");
+const list = document.querySelector('#ingredients');
 
 const newList = ingredients
-  .map((ingredient) => `<li class="item">${ingredient}</li>`)
-  .join("");
+  .map(ingredient => `<li class="item">${ingredient}</li>`)
+  .join('');
 
-list.insertAdjacentHTML("beforeend", newList);
-
-console.log(newList);
+list.insertAdjacentHTML('beforeend', newList);
